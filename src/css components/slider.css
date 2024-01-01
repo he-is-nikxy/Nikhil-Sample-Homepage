@@ -1,0 +1,30 @@
+.scrollingMenu{
+    
+    align-items: center;
+    /* text-align: center; */
+    padding: 1.5rem;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.scrollingMenu::-webkit-scrollbar{
+    display: none;
+}
+.elem {
+    display: inline-block;
+    margin-right: 2rem;
+    width: 20rem;
+    height: 13rem;
+    /* border: 2px solid red; */
+    background-color: rgb(31, 31, 80);
+    color: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+
+.elem p {
+    white-space: normal;
+    margin: 1rem 0;
+    /* overflow-wrap: break-word; */
+}
+

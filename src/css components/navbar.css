@@ -1,0 +1,132 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(50, 50, 250); */
+  /* background-color: rgb(30, 38, 177); */
+  background-color: rgb(31, 31, 80);
+  color: white;
+  padding: 0.8rem;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-label {
+  margin-right: 0.5rem;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-arrow.open {
+  transform: rotateX(180deg);
+}
+
+.dropdown-content {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  /* left: 0; */
+  /* background-color: rgb(50, 50, 250); */
+  background-color: rgb(31, 31, 80);
+  /* display: flex; */
+  /* flex-direction: column; */
+  opacity: 0.88;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  font-size: 0.8rem;
+  /* border-bottom: 1px solid black; */
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-part1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-left: 5rem;
+}
+
+#nav-part2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.enrollbtn {
+  background-color: white;
+  /* color: rgb(0, 0, 165); */
+  color: rgb(31, 31, 80);
+  border: none;
+  border-radius: 0.1rem;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.enrollbtn:hover {
+  border-radius: 0.2rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  background-color: rgb(31, 31, 80);
+}
+
+@media (max-width: 1000px) {
+  #nav-part2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    visibility: hidden;
+  }
+  #nav-part2 .enrollbtn {
+    background-color: white;
+    /* color: rgb(0, 0, 165); */
+    color: rgb(31, 31, 80);
+    border: none;
+    border-radius: .1rem;
+    padding: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: .4s;
+    visibility: visible;
+  }
+}

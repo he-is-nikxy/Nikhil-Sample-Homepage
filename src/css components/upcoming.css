@@ -1,0 +1,132 @@
+
+#upcoming {
+    width: 100%;
+    height: 10rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.examinations {
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    margin: auto;
+    align-items: center;
+}
+
+.examinationsMain {
+    border-right: 2px solid rgb(192, 192, 192);
+    width: 30%;
+}
+
+
+.date-time {
+    width: 60%;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* align-items: center; */
+}
+
+
+.oct2014 {
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid violet; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.nov2016 {
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid violet; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.ongoing {
+    width: 30%  ;
+    height: 100%;
+    /* border: 2px solid violet; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.examinations h2 {
+    color: rgb(30, 30, 80);
+}
+
+.examinations p {
+    color: rgb(78, 78, 78);
+}
+
+
+.calendarIcon {
+    font-size: 2rem;
+    color: rgb(30, 30, 80);
+}
+
+
+.calendarContent h4 {
+    color: rgb(30, 30, 80);
+}
+
+.calendarContent p {
+    color: rgb(78, 78, 78);
+}
+
+
+
+@media (max-width: 1000px) {
+    #upcoming {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0 5%;
+    }
+    .examinationsMain {
+        width: 100%;
+        margin: 3rem 5rem;
+    }
+    .date-time {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin: 0 5rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    #upcoming {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0 5%;
+    }
+    .examinationsMain {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .date-time {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+}

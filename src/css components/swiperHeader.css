@@ -1,0 +1,73 @@
+#SwiperHeader {
+    margin: 0;
+    width: 100%;
+    height: 20rem;
+    /* border: 2px solid red; */
+}
+
+#slide1 {
+    background-image: url(../images/comp1.png);
+    background-size: cover;
+}
+
+#slide2 {
+    background-image: url(../images/comp2.jpg);
+    background-size: cover;
+}
+
+#slide3 {
+    background-image: url(../images/comp3.jpg);
+    background-size: cover;
+}
+
+#slide4 {
+    background-image: url(../images/comp4.jpg);
+    background-size: cover;
+}
+
+#slide1 div, #slide4 div {
+    width: 35%;
+    /* max-height: 50%; */
+    /* border: 2px solid red; */
+    margin: 4rem;
+    color: rgb(31, 31, 80);
+}
+
+.slideH {
+    margin-bottom: 1.5rem;
+}
+
+.slideBtn {
+    margin: 1rem 0;
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(31, 31, 80);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.slideBtn:hover {
+    background-color: white;
+    border: 2px solid rgb(31, 31, 80);
+    letter-spacing: .1rem;
+    color: rgb(31, 31, 80);
+}
+
+#slide2 div {
+    width: 30rem;
+    /* color: white; */
+    color: rgb(31, 31, 80);
+    /* margin-top: 4rem; */
+    margin: 4rem 45rem;
+    /* border: 2px solid red; */
+}
+
+#slide3 div {
+    width: 30rem;
+    color: white;
+    margin: 4rem 40rem;
+}

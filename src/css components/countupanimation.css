@@ -1,0 +1,59 @@
+#countupAnimation {
+    background-color: aliceblue;
+    color: rgb(31, 31, 80);
+    height: 18rem;
+    width: 100%;
+}
+
+#countupAnimationDivs {
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid red; */
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+#countupAnimationDivs div h1 {
+    font-size: 3.5rem;
+    margin: .5rem 0;
+}
+
+@media (max-width: 1000px) {
+    #countupAnimation {
+        background-color: aliceblue;
+        color: rgb(31, 31, 80);
+        height: auto;
+        width: 100%;
+    }
+    #countupAnimationDivs {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #countupAnimation {
+        background-color: aliceblue;
+        color: rgb(31, 31, 80);
+        height: auto;
+        width: 100%;
+    }
+    #countupAnimationDivs {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
